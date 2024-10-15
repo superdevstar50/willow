@@ -1,0 +1,14 @@
+{
+  "name": "willow",
+  "version": "1.0.0",
+  "description": "Assignment for candidates applying for the job of full stack developer at Willow in October 2024.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
