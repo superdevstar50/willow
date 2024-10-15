@@ -39,3 +39,7 @@ Don't forget to add clear instructions on how we can test your application local
 * We aim to receive the bulk of the submissions before November 27, 2024.
 * We will begin reviewing the submissions in the order they are completed.
 * we will continue until we find the right fit for the team.
+
+# Q&A
+
+If you have questions, you can use the discussions section of this repository. We will monitor this section closely.
