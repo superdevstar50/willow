@@ -30,9 +30,10 @@ Don't forget to add clear instructions on how we can test your application local
 
 # Submission Instructions
 
-1.	Fork this repository.
+1.	Clone this repository.
 2.	Complete the assignment.
-3.	Once finished, submit your assignment by sharing the link to your forked repository via the form on https://forms.gle/4H2KKcPGPh66c2Le9.
+3.	Publish your repository online such that it is accessible by koen@willow.co.
+4.	Once finished, submit your assignment by sharing the link to your repository via the form on https://forms.gle/4H2KKcPGPh66c2Le9.
 
 # Timing
 
