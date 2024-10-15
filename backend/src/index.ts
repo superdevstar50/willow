@@ -23,17 +23,23 @@ let ideaSaved = false;
 app.post("/api/chat", async (req: Request, res: Response) => {
   const { message } = req.body;
   try {
-    const completion = await openai.chat.completions.create({
-      model: "text-davinci-003",
-      messages: [
-        {
-          content: `The user is brainstorming ideas with you. If they ask to save an idea, return "save". Here is their message: "${message}".`,
-          role: "user",
-        },
-      ],
-      max_tokens: 100,
-    });
-    const botMessage = completion.choices[0].message.content?.trim();
+    // const completion = await openai.chat.completions.create({
+    //   model: "text-davinci-003",
+    //   messages: [
+    //     {
+    //       content: `The user is brainstorming ideas with you. If they ask to save an idea, return "save". Here is their message: "${message}".`,
+    //       role: "user",
+    //     },
+    //   ],
+    //   max_tokens: 100,
+    // });
+    // const botMessage = completion.choices[0].message.content?.trim();
+
+    // This is for test
+    const botMessage =
+      message === "save this idea"
+        ? "save"
+        : "Random message" + messages.length;
 
     if (botMessage === "save") {
       if (messages.length === 0) {
