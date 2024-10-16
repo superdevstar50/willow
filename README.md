@@ -47,6 +47,13 @@ Don't forget to add clear instructions on how we can test your application local
 
 If you have questions, you can use the discussions section of this repository. We will monitor this section closely.
 
+# Setup to run the project
+
+- Run the command `cd frontend` and `npm install` on root folder.
+- Run the command `cd backend` and `npm install` on root folder.
+- Run the command `npm install` on root folder.
+- Run the command `npm run dev` on root folder.
+
 # How to test
 
 First, try sending some messages using input box.
