@@ -49,10 +49,8 @@ If you have questions, you can use the discussions section of this repository. W
 
 # Setup to run the project
 
-- Run the command `cd frontend` and `npm install` on root folder.
-- Run the command `cd backend` and `npm install` on root folder.
-- Run the command `npm install` on root folder.
-- Run the command `npm run dev` on root folder.
+- Run the command `docker-compose up --build` on root folder.
+- Navigate to `http://localhost:5173` on the browser.
 
 # How to test
 
