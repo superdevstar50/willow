@@ -1,6 +1,8 @@
+const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
+
 export const fetchIdeas = async (): Promise<string[]> => {
   try {
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/ideas`, {
+    const response = await fetch(`${API_URL}/api/ideas`, {
       method: "GET",
     });
     const data = await response.json();
@@ -12,7 +14,7 @@ export const fetchIdeas = async (): Promise<string[]> => {
 
 export const resetData = async (): Promise<boolean> => {
   try {
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/reset`, {
+    const response = await fetch(`${API_URL}/api/reset`, {
       method: "DELETE",
     });
 
@@ -24,7 +26,7 @@ export const resetData = async (): Promise<boolean> => {
 };
 
 export const requestMessage = async (message: string): Promise<string> => {
-  const response = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
+  const response = await fetch(`${API_URL}/api/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message }),
